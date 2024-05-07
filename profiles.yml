@@ -9,7 +9,7 @@ Hackathon:
             password: 'g@,rU("*~uro-d#B2Y'
             database: 'HACKATHON'
             warehouse: 'HACKATHON_WH'
-            schema: 'TEAM_01'
+            schema: 'TEAM_20'
             
         Bigguery_db:
             type: bigquery

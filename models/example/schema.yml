@@ -5,7 +5,7 @@ models:
   - name: my_first_dbt_model
     description: "A starter dbt model"
     config:
-      materialized: ephemeral
+      materialized: view
     columns:
       - name: id
         description: "The primary key for this table"
@@ -16,7 +16,7 @@ models:
   - name: my_second_dbt_model
     description: "A starter dbt model"
     config:
-      materialized: ephemeral
+      materialized: view
     columns:
       - name: id
         description: "The primary key for this table"
