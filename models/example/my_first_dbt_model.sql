@@ -14,6 +14,7 @@ with
 
     )
 
-select *
+select *,'' AS "A"
 from source_data
 where id is not null
+
