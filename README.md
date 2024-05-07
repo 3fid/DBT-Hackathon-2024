@@ -17,3 +17,11 @@ Try running the following commands:
 
 
 pip install -r .\requirements.txt
+
+
+pokud nemas virtualni prostředí: python -m venv venv
+
+aktivace prostředí:
+.\venv\Scripts\Activate     (prostredi je o slozku výš)
+deaktivace prostředí:
+deactivate

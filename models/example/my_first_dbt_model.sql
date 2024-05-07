@@ -10,11 +10,12 @@ with
 
         select 1 as id
         union all
-        select null as id
-
+        select 2 as id
+        union all
+        select 3 as id
     )
 
-select *,'' AS "A"
+select id
 from source_data
 where id is not null
 

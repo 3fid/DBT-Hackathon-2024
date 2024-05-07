@@ -10,3 +10,536 @@ Runtime Error
 [0m13:53:09.599070 [debug] [MainThread]: Command `dbt build` failed at 13:53:09.599070 after 3.01 seconds
 [0m13:53:09.599070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE2AC08800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE331C3AA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE315D0230>]}
 [0m13:53:09.599070 [debug] [MainThread]: Flushing usage events
+[0m12:59:09.253443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB013612B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB01361EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB01360920>]}
+
+
+============================== 12:59:09.256434 | d4aaceb7-1c82-48a6-9eb7-bcb1df82430f ==============================
+[0m12:59:09.256434 [info ] [MainThread]: Running with dbt=1.7.14
+[0m12:59:09.257434 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt build', 'send_anonymous_usage_stats': 'True'}
+[0m12:59:10.128156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd4aaceb7-1c82-48a6-9eb7-bcb1df82430f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB7E1E52B0>]}
+[0m12:59:10.182717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd4aaceb7-1c82-48a6-9eb7-bcb1df82430f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB0191A0F0>]}
+[0m12:59:10.183717 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m12:59:10.191717 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m12:59:10.192717 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:59:10.193718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd4aaceb7-1c82-48a6-9eb7-bcb1df82430f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB19D40DA0>]}
+[0m12:59:11.334636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd4aaceb7-1c82-48a6-9eb7-bcb1df82430f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1A40E120>]}
+[0m12:59:11.349644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd4aaceb7-1c82-48a6-9eb7-bcb1df82430f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1A5BA8A0>]}
+[0m12:59:11.350644 [info ] [MainThread]: Found 2 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m12:59:11.353158 [info ] [MainThread]: 
+[0m12:59:11.354156 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:59:11.355157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4aaceb7-1c82-48a6-9eb7-bcb1df82430f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1A359040>]}
+[0m12:59:11.357159 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m12:59:11.358158 [info ] [MainThread]: 
+[0m12:59:11.370157 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m12:59:11.371157 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.Revolt_BI_Hackathon.my_first_dbt_model'
+[0m12:59:11.373160 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m12:59:11.381159 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_first_dbt_model"
+[0m12:59:11.385161 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (compile): 12:59:11.374160 => 12:59:11.384176
+[0m12:59:11.386159 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m12:59:11.388157 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m12:59:11.388157 [info ] [Thread-1 (]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m12:59:11.390160 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_first_dbt_model, now test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m12:59:11.391160 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m12:59:11.408160 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m12:59:11.410156 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 12:59:11.392163 => 12:59:11.410156
+[0m12:59:11.411157 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m12:59:11.446165 [debug] [Thread-1 (]: Writing runtime sql for node "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m12:59:11.450167 [debug] [Thread-1 (]: Using snowflake connection "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m12:59:11.451676 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+with __dbt__cte__my_first_dbt_model as (
+/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+
+    This will override configurations stated in dbt_project.yml
+    Try changing "table" to "view" below
+*/
+with
+    source_data as (
+
+        select 1 as id
+        union all
+        select null as id
+
+    )
+
+select *,'' AS "A"
+from source_data
+where id is not null
+) select id
+from __dbt__cte__my_first_dbt_model
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m12:59:11.452684 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:59:12.324422 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b42ad3-0202-a849-0002-461e0014c83e
+[0m12:59:12.325423 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+[0m12:59:12.325423 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 12:59:11.411157 => 12:59:12.325423
+[0m12:59:12.326423 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m12:59:12.403734 [debug] [Thread-1 (]: Database Error in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled Code at target\run\Revolt_BI_Hackathon\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m12:59:12.404734 [error] [Thread-1 (]: 1 of 4 ERROR not_null_my_first_dbt_model_id .................................... [[31mERROR[0m in 1.02s]
+[0m12:59:12.405734 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m12:59:12.406734 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m12:59:12.406734 [info ] [Thread-1 (]: 2 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m12:59:12.408736 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710, now test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321)
+[0m12:59:12.408736 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m12:59:12.416734 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m12:59:12.418735 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (compile): 12:59:12.408736 => 12:59:12.417734
+[0m12:59:12.418735 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m12:59:12.421735 [debug] [Thread-1 (]: Writing runtime sql for node "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m12:59:12.423734 [debug] [Thread-1 (]: Using snowflake connection "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m12:59:12.423734 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with __dbt__cte__my_first_dbt_model as (
+/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+
+    This will override configurations stated in dbt_project.yml
+    Try changing "table" to "view" below
+*/
+with
+    source_data as (
+
+        select 1 as id
+        union all
+        select null as id
+
+    )
+
+select *,'' AS "A"
+from source_data
+where id is not null
+) select
+    id as unique_field,
+    count(*) as n_records
+
+from __dbt__cte__my_first_dbt_model
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m12:59:12.424735 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:59:12.983602 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b42ad3-0202-a845-0002-461e001498d6
+[0m12:59:12.983602 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+[0m12:59:12.984600 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (execute): 12:59:12.419733 => 12:59:12.984600
+[0m12:59:12.984600 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321: Close
+[0m12:59:13.053447 [debug] [Thread-1 (]: Database Error in test unique_my_first_dbt_model_id (models\example\schema.yml)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled Code at target\run\Revolt_BI_Hackathon\models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m12:59:13.054447 [error] [Thread-1 (]: 2 of 4 ERROR unique_my_first_dbt_model_id ...................................... [[31mERROR[0m in 0.65s]
+[0m12:59:13.055447 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m12:59:13.056448 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m12:59:13.057445 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m12:59:13.057445 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m12:59:13.058445 [info ] [Thread-1 (]: 3 of 4 SKIP test not_null_my_second_dbt_model_id ............................... [[33mSKIP[0m]
+[0m12:59:13.059445 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m12:59:13.060443 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m12:59:13.060443 [info ] [Thread-1 (]: 4 of 4 SKIP test unique_my_second_dbt_model_id ................................. [[33mSKIP[0m]
+[0m12:59:13.061444 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m12:59:13.063448 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:59:13.063448 [debug] [MainThread]: Connection 'test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m12:59:13.064448 [info ] [MainThread]: 
+[0m12:59:13.065444 [info ] [MainThread]: Finished running 4 tests in 0 hours 0 minutes and 1.71 seconds (1.71s).
+[0m12:59:13.066443 [debug] [MainThread]: Command end result
+[0m12:59:13.074445 [info ] [MainThread]: 
+[0m12:59:13.075444 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m12:59:13.076444 [info ] [MainThread]: 
+[0m12:59:13.077446 [error] [MainThread]:   Database Error in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled Code at target\run\Revolt_BI_Hackathon\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m12:59:13.078446 [info ] [MainThread]: 
+[0m12:59:13.079488 [error] [MainThread]:   Database Error in test unique_my_first_dbt_model_id (models\example\schema.yml)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled Code at target\run\Revolt_BI_Hackathon\models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m12:59:13.081449 [info ] [MainThread]: 
+[0m12:59:13.082446 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=2 TOTAL=4
+[0m12:59:13.084448 [debug] [MainThread]: Command `dbt build` failed at 12:59:13.083449 after 3.95 seconds
+[0m12:59:13.084448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB01251A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1A568B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB00F94830>]}
+[0m12:59:13.085447 [debug] [MainThread]: Flushing usage events
+[0m13:00:52.866303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191C492B140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191C492B170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191C492B6B0>]}
+
+
+============================== 13:00:52.869306 | b39f0089-6302-4e3b-92df-0b8bfecb64a6 ==============================
+[0m13:00:52.869306 [info ] [MainThread]: Running with dbt=1.7.14
+[0m13:00:52.870306 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt build', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:00:53.674069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b39f0089-6302-4e3b-92df-0b8bfecb64a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191DD6CB830>]}
+[0m13:00:53.727075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b39f0089-6302-4e3b-92df-0b8bfecb64a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191DD00F770>]}
+[0m13:00:53.728076 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m13:00:53.735548 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m13:00:53.809545 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m13:00:53.809545 [debug] [MainThread]: Partial parsing: updated file: Revolt_BI_Hackathon://models\example\schema.yml
+[0m13:00:53.810553 [debug] [MainThread]: Partial parsing: updated file: Revolt_BI_Hackathon://models\example\my_first_dbt_model.sql
+[0m13:00:54.080355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b39f0089-6302-4e3b-92df-0b8bfecb64a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191DDBCA3C0>]}
+[0m13:00:54.089356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b39f0089-6302-4e3b-92df-0b8bfecb64a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191DD8DD100>]}
+[0m13:00:54.089356 [info ] [MainThread]: Found 2 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m13:00:54.091356 [info ] [MainThread]: 
+[0m13:00:54.092357 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:00:54.094357 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON'
+[0m13:00:54.106357 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON"
+[0m13:00:54.106357 [debug] [ThreadPool]: On list_HACKATHON: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON"} */
+show terse schemas in database HACKATHON
+    limit 10000
+[0m13:00:54.107356 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:00:54.766808 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b42ad4-0202-a849-0002-461e0014c856
+[0m13:00:54.766808 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m13:00:54.767807 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m13:00:54.767807 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:00:54.768807 [debug] [ThreadPool]: On list_HACKATHON: Close
+[0m13:00:54.969490 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:00:54.970555 [debug] [MainThread]: Connection 'list_HACKATHON' was properly closed.
+[0m13:00:54.970555 [info ] [MainThread]: 
+[0m13:00:54.971501 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.88 seconds (0.88s).
+[0m13:00:54.972626 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "HACKATHON"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+[0m13:00:54.974416 [debug] [MainThread]: Command `dbt build` failed at 13:00:54.974416 after 2.26 seconds
+[0m13:00:54.975412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191C4754EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191DDC66120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191DD8DD970>]}
+[0m13:00:54.975412 [debug] [MainThread]: Flushing usage events
+[0m13:02:44.628055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF90235940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF90235280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF90234140>]}
+
+
+============================== 13:02:44.631058 | de9c3d7e-32da-4fdf-a31e-4756ba25a50a ==============================
+[0m13:02:44.631058 [info ] [MainThread]: Running with dbt=1.7.14
+[0m13:02:44.632058 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt build', 'send_anonymous_usage_stats': 'True'}
+[0m13:02:45.411534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'de9c3d7e-32da-4fdf-a31e-4756ba25a50a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF8F29F8F0>]}
+[0m13:02:45.466158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'de9c3d7e-32da-4fdf-a31e-4756ba25a50a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFA8B5C4A0>]}
+[0m13:02:45.467159 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m13:02:45.475161 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m13:02:45.482160 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:02:45.483421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'de9c3d7e-32da-4fdf-a31e-4756ba25a50a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFA9212C60>]}
+[0m13:02:46.473133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'de9c3d7e-32da-4fdf-a31e-4756ba25a50a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFA9337BC0>]}
+[0m13:02:46.481101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'de9c3d7e-32da-4fdf-a31e-4756ba25a50a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFA9246C00>]}
+[0m13:02:46.482101 [info ] [MainThread]: Found 2 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m13:02:46.483083 [info ] [MainThread]: 
+[0m13:02:46.484123 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:02:46.486125 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON'
+[0m13:02:46.497118 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON"
+[0m13:02:46.498123 [debug] [ThreadPool]: On list_HACKATHON: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON"} */
+show terse schemas in database HACKATHON
+    limit 10000
+[0m13:02:46.498123 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:02:47.127935 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b42ad6-0202-a835-0002-461e0014aa7a
+[0m13:02:47.127935 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m13:02:47.128956 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m13:02:47.128956 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:02:47.129934 [debug] [ThreadPool]: On list_HACKATHON: Close
+[0m13:02:47.202197 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:02:47.203235 [debug] [MainThread]: Connection 'list_HACKATHON' was properly closed.
+[0m13:02:47.204233 [info ] [MainThread]: 
+[0m13:02:47.206197 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.72 seconds (0.72s).
+[0m13:02:47.207200 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "HACKATHON"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+[0m13:02:47.210687 [debug] [MainThread]: Command `dbt build` failed at 13:02:47.210687 after 2.72 seconds
+[0m13:02:47.210687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF8FDD2DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFA926C710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFA91E67B0>]}
+[0m13:02:47.211686 [debug] [MainThread]: Flushing usage events
+[0m13:04:45.353606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD3046E870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD32C42B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD32C41130>]}
+
+
+============================== 13:04:45.356619 | 97f1eb47-74a1-4496-ade2-75cbdda31745 ==============================
+[0m13:04:45.356619 [info ] [MainThread]: Running with dbt=1.7.14
+[0m13:04:45.357604 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024\\logs', 'profiles_dir': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m13:04:46.165379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '97f1eb47-74a1-4496-ade2-75cbdda31745', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD4B97C380>]}
+[0m13:04:46.219415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '97f1eb47-74a1-4496-ade2-75cbdda31745', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD4BA568A0>]}
+[0m13:04:46.220420 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m13:04:46.227416 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m13:04:46.300650 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:04:46.301640 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:04:46.306605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '97f1eb47-74a1-4496-ade2-75cbdda31745', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD4BAFF7D0>]}
+[0m13:04:46.314606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '97f1eb47-74a1-4496-ade2-75cbdda31745', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD4BC7DEE0>]}
+[0m13:04:46.314606 [info ] [MainThread]: Found 2 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m13:04:46.315604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '97f1eb47-74a1-4496-ade2-75cbdda31745', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD4B4EE450>]}
+[0m13:04:46.317604 [info ] [MainThread]: 
+[0m13:04:46.318606 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:04:46.319605 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HACKATHON'
+[0m13:04:46.331604 [debug] [ThreadPool]: Using snowflake connection "list_HACKATHON"
+[0m13:04:46.331604 [debug] [ThreadPool]: On list_HACKATHON: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "connection_name": "list_HACKATHON"} */
+show terse schemas in database HACKATHON
+    limit 10000
+[0m13:04:46.332604 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:04:47.011366 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01b42ad8-0202-a9af-0002-461e0015077e
+[0m13:04:47.012357 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m13:04:47.014318 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m13:04:47.015348 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m13:04:47.016317 [debug] [ThreadPool]: On list_HACKATHON: Close
+[0m13:04:47.105746 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:04:47.107708 [debug] [MainThread]: Connection 'list_HACKATHON' was properly closed.
+[0m13:04:47.109717 [info ] [MainThread]: 
+[0m13:04:47.110110 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.79 seconds (0.79s).
+[0m13:04:47.111117 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "HACKATHON"
+  Database Error
+    002043 (02000): SQL compilation error:
+    Object does not exist, or operation cannot be performed.
+[0m13:04:47.113118 [debug] [MainThread]: Command `dbt run` failed at 13:04:47.113118 after 1.91 seconds
+[0m13:04:47.114118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD4BC73830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD4BC7E6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AD4BC7DF70>]}
+[0m13:04:47.114118 [debug] [MainThread]: Flushing usage events
+[0m13:09:29.025500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F00A5CC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F0090E330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F00A5CA40>]}
+
+
+============================== 13:09:29.028503 | f5d12b30-3bb1-40ef-9747-36f9256ea1f8 ==============================
+[0m13:09:29.028503 [info ] [MainThread]: Running with dbt=1.7.14
+[0m13:09:29.029503 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt build', 'send_anonymous_usage_stats': 'True'}
+[0m13:09:29.749791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f5d12b30-3bb1-40ef-9747-36f9256ea1f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F1874F4A0>]}
+[0m13:09:29.800406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f5d12b30-3bb1-40ef-9747-36f9256ea1f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F187F8740>]}
+[0m13:09:29.801410 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m13:09:29.808374 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m13:09:29.874407 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:09:29.875406 [debug] [MainThread]: Partial parsing: updated file: Revolt_BI_Hackathon://models\example\schema.yml
+[0m13:09:30.120272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f5d12b30-3bb1-40ef-9747-36f9256ea1f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F19CA05C0>]}
+[0m13:09:30.128238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f5d12b30-3bb1-40ef-9747-36f9256ea1f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F19A8D280>]}
+[0m13:09:30.129271 [info ] [MainThread]: Found 2 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m13:09:30.131271 [info ] [MainThread]: 
+[0m13:09:30.132239 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:09:30.132239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f5d12b30-3bb1-40ef-9747-36f9256ea1f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F19C735C0>]}
+[0m13:09:30.133237 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m13:09:30.133866 [info ] [MainThread]: 
+[0m13:09:30.137384 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m13:09:30.138382 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.Revolt_BI_Hackathon.my_first_dbt_model'
+[0m13:09:30.138382 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m13:09:30.144383 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_first_dbt_model"
+[0m13:09:30.145384 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (compile): 13:09:30.138382 => 13:09:30.145384
+[0m13:09:30.147382 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m13:09:30.148382 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:09:30.148382 [info ] [Thread-1 (]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m13:09:30.149381 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_first_dbt_model, now test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m13:09:30.150382 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:09:30.162386 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m13:09:30.164384 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 13:09:30.150382 => 13:09:30.163382
+[0m13:09:30.164384 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:09:30.187389 [debug] [Thread-1 (]: Writing runtime sql for node "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m13:09:30.189388 [debug] [Thread-1 (]: Using snowflake connection "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m13:09:30.189388 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+with __dbt__cte__my_first_dbt_model as (
+/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+
+    This will override configurations stated in dbt_project.yml
+    Try changing "table" to "view" below
+*/
+with
+    source_data as (
+
+        select 1 as id
+        union all
+        select 2 as id
+        union all
+        select 3 as id
+    )
+
+select id
+from source_data
+where id is not null
+) select id
+from __dbt__cte__my_first_dbt_model
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:09:30.190386 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:09:30.868440 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b42add-0202-a9af-0002-461e00150782
+[0m13:09:30.870446 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+[0m13:09:30.872443 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 13:09:30.164384 => 13:09:30.872443
+[0m13:09:30.874426 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m13:09:30.972030 [debug] [Thread-1 (]: Database Error in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled Code at target\run\Revolt_BI_Hackathon\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m13:09:30.974033 [error] [Thread-1 (]: 1 of 4 ERROR not_null_my_first_dbt_model_id .................................... [[31mERROR[0m in 0.82s]
+[0m13:09:30.975017 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710
+[0m13:09:30.976032 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m13:09:30.977016 [info ] [Thread-1 (]: 2 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m13:09:30.978028 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Revolt_BI_Hackathon.not_null_my_first_dbt_model_id.5fb22c2710, now test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321)
+[0m13:09:30.978028 [debug] [Thread-1 (]: Began compiling node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m13:09:30.988022 [debug] [Thread-1 (]: Writing injected SQL for node "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m13:09:30.989054 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (compile): 13:09:30.978028 => 13:09:30.989054
+[0m13:09:30.990023 [debug] [Thread-1 (]: Began executing node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m13:09:30.992050 [debug] [Thread-1 (]: Writing runtime sql for node "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m13:09:30.994021 [debug] [Thread-1 (]: Using snowflake connection "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"
+[0m13:09:30.995056 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.7.14", "profile_name": "Hackathon", "target_name": "Snowflake_DB", "node_id": "test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with __dbt__cte__my_first_dbt_model as (
+/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+
+    This will override configurations stated in dbt_project.yml
+    Try changing "table" to "view" below
+*/
+with
+    source_data as (
+
+        select 1 as id
+        union all
+        select 2 as id
+        union all
+        select 3 as id
+    )
+
+select id
+from source_data
+where id is not null
+) select
+    id as unique_field,
+    count(*) as n_records
+
+from __dbt__cte__my_first_dbt_model
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m13:09:30.995056 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:09:31.518743 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b42add-0202-a835-0002-461e0014aa7e
+[0m13:09:31.518743 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+
+[0m13:09:31.519741 [debug] [Thread-1 (]: Timing info for test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321 (execute): 13:09:30.990023 => 13:09:31.519741
+[0m13:09:31.520704 [debug] [Thread-1 (]: On test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321: Close
+[0m13:09:31.594240 [debug] [Thread-1 (]: Database Error in test unique_my_first_dbt_model_id (models\example\schema.yml)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled Code at target\run\Revolt_BI_Hackathon\models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m13:09:31.595241 [error] [Thread-1 (]: 2 of 4 ERROR unique_my_first_dbt_model_id ...................................... [[31mERROR[0m in 0.62s]
+[0m13:09:31.597244 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321
+[0m13:09:31.598242 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m13:09:31.599242 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m13:09:31.601243 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m13:09:31.601749 [info ] [Thread-1 (]: 3 of 4 SKIP test not_null_my_second_dbt_model_id ............................... [[33mSKIP[0m]
+[0m13:09:31.603760 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.not_null_my_second_dbt_model_id.151b76d778
+[0m13:09:31.604759 [debug] [Thread-1 (]: Began running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m13:09:31.605758 [info ] [Thread-1 (]: 4 of 4 SKIP test unique_my_second_dbt_model_id ................................. [[33mSKIP[0m]
+[0m13:09:31.606758 [debug] [Thread-1 (]: Finished running node test.Revolt_BI_Hackathon.unique_my_second_dbt_model_id.57a0f8c493
+[0m13:09:31.609759 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:09:31.610777 [debug] [MainThread]: Connection 'test.Revolt_BI_Hackathon.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m13:09:31.610777 [info ] [MainThread]: 
+[0m13:09:31.611758 [info ] [MainThread]: Finished running 4 tests in 0 hours 0 minutes and 1.48 seconds (1.48s).
+[0m13:09:31.613758 [debug] [MainThread]: Command end result
+[0m13:09:31.620784 [info ] [MainThread]: 
+[0m13:09:31.621756 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m13:09:31.622757 [info ] [MainThread]: 
+[0m13:09:31.623758 [error] [MainThread]:   Database Error in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled Code at target\run\Revolt_BI_Hackathon\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m13:09:31.625760 [info ] [MainThread]: 
+[0m13:09:31.626757 [error] [MainThread]:   Database Error in test unique_my_first_dbt_model_id (models\example\schema.yml)
+  000606 (57P03): No active warehouse selected in the current session.  Select an active warehouse with the 'use warehouse' command.
+  
+  compiled Code at target\run\Revolt_BI_Hackathon\models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m13:09:31.627759 [info ] [MainThread]: 
+[0m13:09:31.628758 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=2 TOTAL=4
+[0m13:09:31.629756 [debug] [MainThread]: Command `dbt build` failed at 13:09:31.629756 after 2.74 seconds
+[0m13:09:31.629756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F006BD040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F19CE7D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F7FF0D400>]}
+[0m13:09:31.630757 [debug] [MainThread]: Flushing usage events
+[0m13:09:38.406112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141686094F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014167D1A900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141677EE420>]}
+
+
+============================== 13:09:38.409624 | d6aa5cbb-78f5-4081-a63a-488699c6bc22 ==============================
+[0m13:09:38.409624 [info ] [MainThread]: Running with dbt=1.7.14
+[0m13:09:38.409624 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024', 'log_path': 'C:\\Users\\barrf\\Documents\\GitHub-repos\\Revolt-hackathon\\DBT-Hackathon-2024\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:09:39.133328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd6aa5cbb-78f5-4081-a63a-488699c6bc22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014168246330>]}
+[0m13:09:39.183329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd6aa5cbb-78f5-4081-a63a-488699c6bc22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001417FF14FB0>]}
+[0m13:09:39.184333 [info ] [MainThread]: Registered adapter: snowflake=1.7.3
+[0m13:09:39.191331 [debug] [MainThread]: checksum: ccbe0bccecb23e0b0bcca76d525b7d642e28acd474046360f7f33e61c6a2b781, vars: {}, profile: , target: , version: 1.7.14
+[0m13:09:39.256895 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:09:39.257895 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:09:39.262895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd6aa5cbb-78f5-4081-a63a-488699c6bc22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001417F338740>]}
+[0m13:09:39.269897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd6aa5cbb-78f5-4081-a63a-488699c6bc22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141015ED580>]}
+[0m13:09:39.269897 [info ] [MainThread]: Found 2 models, 4 tests, 0 sources, 0 exposures, 0 metrics, 430 macros, 0 groups, 0 semantic models
+[0m13:09:39.270897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd6aa5cbb-78f5-4081-a63a-488699c6bc22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001417FEAF0E0>]}
+[0m13:09:39.271897 [info ] [MainThread]: 
+[0m13:09:39.273507 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:09:39.273507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd6aa5cbb-78f5-4081-a63a-488699c6bc22', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141013DAD50>]}
+[0m13:09:39.274515 [info ] [MainThread]: Concurrency: 1 threads (target='Snowflake_DB')
+[0m13:09:39.274515 [info ] [MainThread]: 
+[0m13:09:39.277513 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m13:09:39.278512 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.Revolt_BI_Hackathon.my_first_dbt_model'
+[0m13:09:39.279512 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m13:09:39.285511 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_first_dbt_model"
+[0m13:09:39.286514 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_first_dbt_model (compile): 13:09:39.279512 => 13:09:39.286514
+[0m13:09:39.287514 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_first_dbt_model
+[0m13:09:39.288523 [debug] [Thread-1 (]: Began running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m13:09:39.289513 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Revolt_BI_Hackathon.my_first_dbt_model, now model.Revolt_BI_Hackathon.my_second_dbt_model)
+[0m13:09:39.290513 [debug] [Thread-1 (]: Began compiling node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m13:09:39.293512 [debug] [Thread-1 (]: Writing injected SQL for node "model.Revolt_BI_Hackathon.my_second_dbt_model"
+[0m13:09:39.295512 [debug] [Thread-1 (]: Timing info for model.Revolt_BI_Hackathon.my_second_dbt_model (compile): 13:09:39.290513 => 13:09:39.295512
+[0m13:09:39.296519 [debug] [Thread-1 (]: Finished running node model.Revolt_BI_Hackathon.my_second_dbt_model
+[0m13:09:39.298536 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:09:39.298536 [debug] [MainThread]: Connection 'model.Revolt_BI_Hackathon.my_second_dbt_model' was properly closed.
+[0m13:09:39.299518 [info ] [MainThread]: 
+[0m13:09:39.300520 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.03 seconds (0.03s).
+[0m13:09:39.301517 [debug] [MainThread]: Command end result
+[0m13:09:39.308520 [debug] [MainThread]: Command `dbt run` succeeded at 13:09:39.308520 after 0.99 seconds
+[0m13:09:39.309518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014167D1A900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014100FE9640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001417FB5F2C0>]}
+[0m13:09:39.309518 [debug] [MainThread]: Flushing usage events
