@@ -6,7 +6,7 @@ Hackathon:
             type: snowflake
             account: 'JXGPFAR-REVOLT_PARTNER'
             user: 'FBAR'
-            password: 'g@,rU("*~uro-d#B2Y'
+            password: '******************'
             database: 'HACKATHON'
             warehouse: 'HACKATHON_WH'
             schema: 'TEAM_20'
